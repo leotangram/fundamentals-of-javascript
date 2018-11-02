@@ -4,9 +4,25 @@
  * puede mutar sin ningun problema
  */
 var nombre = 'Leo', apellido = 'Omaña'
-var edad = 28
 
-console.log('Hola ' + nombre + ' ' + apellido)
-console.log('Tengo ' + edad + ' años')
+var nombreEnMayusculas = nombre.toUpperCase()
+var apellidoEnMinusculas = apellido.toLowerCase()
 
-var peso = 75
+var primeraLetraDelNombre = nombre.charAt(0)
+var cantidadDeLetrasDelNombre = nombre.length
+
+// Variables: String
+
+/** Forma antigua de concatenar */
+var nombreCompleto = nombre + ' ' + apellido
+
+/** 
+ * Forma nueva de concatenar 
+ * La comilla invertida `` nos permite interpolar variables 
+  */
+var nombreCompleto2 = `${nombre} ${apellido.toUpperCase}`
+
+/**
+ * Escoger solo los carácteres que deseo de un string
+ */
+var str = nombre.substr(1, 2)
